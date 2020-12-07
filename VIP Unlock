@@ -2,12 +2,6 @@
 #!desc=用于解锁部分软件
 #!system=ios
 
-[Proxy Group]
-Arcade = fallback, 🇰🇷 Korea 3 [Premium], 🇰🇷 Korea 1,🇰🇷 Korea 2, url = http://cp.cloudflare.com/generate_204, interval = 300, timeout = 5
-
-[Rule]
-RULE-SET,https://ruleset.dev/144c19f9,Arcade
-
 [Script]
 # > 奈飞评分
 http-request ^https?://ios\.prod\.ftl\.netflix\.com/iosui/user/.+path=%5B%22videos%22%2C%\d+%22%2C%22summary%22%5D script-path=https://raw.githubusercontent.com/yichahucha/surge/master/nf_rating.js
