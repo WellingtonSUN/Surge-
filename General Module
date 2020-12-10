@@ -19,6 +19,7 @@ tun-excluded-routes = 10.0.0.0/8,127.0.0.0/8,169.254.0.0/16,192.0.2.0/24,192.168
 tun-included-routes = 192.168.3.1/32,10.92.1.1/32
 internet-test-url = http://www.aliyun.com
 proxy-test-url = http://cp.cloudflare.com/generate_204
+geoip-maxmind-url = https://cdn.jsdelivr.net/gh/Hackl0us/GeoIP-CN@master/artifacts/Country.mmdb
 # macOS Only
 enhanced-mode-by-rule = true
 
