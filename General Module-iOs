@@ -1,5 +1,6 @@
 #!name=General Module-iOs
 #!desc=用于总体设置
+#!system=ios
 
 [General]
 # General
