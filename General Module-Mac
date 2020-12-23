@@ -2,26 +2,35 @@
 #!desc=用于总体设置
 
 [General]
-bypass-system = true
-skip-proxy = 192.168.0.0/16, 10.0.0.0/8, 172.16.0.0/12, 100.64.0.0/10, 127.0.0.1, localhost, *.local, mfs.ykimg.com*.ttf
-doh-server = https://dns.alidns.com/dns-query, https://dns.twnic.tw/dns-query
-dns-server = 119.29.29.29, 180.76.76.76, 223.5.5.5
-loglevel = notify
-replica = false
-tls-provider = network-framework
+# General
+internet-test-url = http://www.qualcomm.cn/generate_204
+proxy-test-url = http://www.qualcomm.cn/generate_204
+test-timeout = 4
 ipv6 = false
 show-error-page-for-reject = true
+# DNS
+dns-server = 119.29.29.29, 180.76.76.76, 223.5.5.5
+# Advanced
+loglevel = notify
+skip-proxy = 127.0.0.1, 192.168.0.0/16, 10.0.0.0/8, 172.16.0.0/12, 100.64.0.0/10, 17.0.0.0/8, localhost, *.local, *.crashlytics.com
 exclude-simple-hostnames = true
-network-framework = true
-always-real-ip = msftconnecttest.com, msftncsi.com, *.msftconnecttest.com, *.msftncsi.com, *.srv.nintendo.net, *.stun.playstation.net, xbox.*.microsoft.com, *.xboxlive.com, *.battlenet.com.cn, *.battlenet.com, *.blzstatic.cn
+use-default-policy-if-wifi-not-primary = false
+# Others
+allow-wifi-access = true
+enhanced-mode-by-rule = false
+# network-framework = true
+tls-provider = network-framework
+doh-server = https://dns.alidns.com/dns-query, https://dns.twnic.tw/dns-query
+tun-excluded-routes = 192.168.0.0/16, 10.0.0.0/8, 172.16.0.0/12
+tun-included-routes = 192.168.1.12/32,10.92.1.12/32
 hijack-dns = 8.8.8.8:53, 8.8.4.4:53
-tun-excluded-routes = 10.0.0.0/8,127.0.0.0/8,169.254.0.0/16,192.0.2.0/24,192.168.0.0/16,198.51.100.0/24,224.0.0.0/4,172.16.0.0/12,100.64.0.0/10,192.0.0.0/24,192.88.99.0/24,203.0.113.0/24,255.255.255.255/32
-tun-included-routes = 192.168.3.1/32,10.92.1.1/32
-internet-test-url = http://www.aliyun.com
-proxy-test-url = http://cp.cloudflare.com/generate_204
-geoip-maxmind-url = https://cdn.jsdelivr.net/gh/Hackl0us/GeoIP-CN@master/artifacts/Country.mmdb
-# macOS Only
-enhanced-mode-by-rule = true
+always-real-ip = msftconnecttest.com, msftncsi.com, *.msftconnecttest.com, *.msftncsi.com, *.srv.nintendo.net, *.stun.playstation.net, xbox.*.microsoft.com, *.xboxlive.com, *.battlenet.com.cn, *.battlenet.com, *.blzstatic.cn
+
+[Replica]
+hide-apple-request = true
+hide-crashlytics-request = true
+hide-udp = false
+keyword-filter-type = false
 
 [Host]
 ip6-localhost = ::1
