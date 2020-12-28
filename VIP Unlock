@@ -18,8 +18,6 @@ Lightroom.js = requires-body=1,max-size=0,script-path=https://raw.githubusercont
 photoshop.js = requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/langkhach270389/Scripting/master/photoshop.js,script-update-interval=0,type=http-response,pattern=^https:\/\/lcs-mobile-cops\.adobe\.io\/mobile_profile
 # > AdGuard
 Adguard Premium = type=http-response,pattern=^https:\/\/mobile-api\.adguard\.com\/api\/.+\/ios_validate_receipt$,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/maicoo-l/Surge/master/Script/AdGuard.js,script-update-interval=0
-# > weather
-AQI-US = type=http-response, pattern=https://weather-data.apple.com/v1/weather/[\w-]+/[0-9]+\.[0-9]+/[0-9]+\.[0-9]+\?, requires-body=true, script-path=https://raw.githubusercontent.com/WellingtonSUN/Surge-/main/iOS_Weather_AQI_Standard.js
 
 [MITM]
-hostname = ios.prod.ftl.netflix.com, ap*.intsig.net, vsco.co, photos.adobe.io, lcs-mobile-cops.adobe.io, mobile-api.adguard.com, weather-data.apple.com
+hostname = ios.prod.ftl.netflix.com, ap*.intsig.net, vsco.co, photos.adobe.io, lcs-mobile-cops.adobe.io, mobile-api.adguard.com
