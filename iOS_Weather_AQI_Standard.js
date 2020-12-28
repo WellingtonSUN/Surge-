@@ -106,3 +106,4 @@ $httpClient.get(`https://api.waqi.info/feed/geo:${lat};${lng}/?token=${aqicnToke
 		let body = modifyWeatherResp($response.body, data)
 		$done({ body })
 	}
+});
