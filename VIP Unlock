@@ -19,9 +19,5 @@ photoshop.js = requires-body=1,max-size=0,script-path=https://raw.githubusercont
 # > AdGuard
 Adguard Premium = type=http-response,pattern=^https:\/\/mobile-api\.adguard\.com\/api\/.+\/ios_validate_receipt$,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/maicoo-l/Surge/master/Script/AdGuard.js,script-update-interval=0
 
-# 电信营业厅
-# 打开 APP 手动签到一次: 访问下右下角 `我` > `签到` (头像下面)
-电信营业厅 = type=cron,cronexp=20 0 0 * * *,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/10000/10000.js,script-update-interval=0
-
 [MITM]
 hostname = ios.prod.ftl.netflix.com, ap*.intsig.net, vsco.co, photos.adobe.io, lcs-mobile-cops.adobe.io, mobile-api.adguard.com
