@@ -38,9 +38,6 @@ hide-crashlytics-request = true
 hide-udp = false
 keyword-filter-type = false
 
-[Rule]
-GEOIP, CN, direct
-
 [Host]
 ip6-localhost = ::1
 ip6-loopback = ::1
