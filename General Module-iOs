@@ -22,7 +22,7 @@ use-default-policy-if-wifi-not-primary = false
 # Others
 allow-wifi-access = true
 enhanced-mode-by-rule = false
-network-framework = true
+# network-framework = true
 tls-provider = openssl
 geoip-maxmind-url = https://github.com/Hackl0us/GeoIP2-CN/raw/release/Country.mmdb
 network-framework = true
