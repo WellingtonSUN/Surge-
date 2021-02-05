@@ -2,13 +2,14 @@
 #!desc=用于总体设置
 #!system=ios
 
-[General]
+General]
 # General
 http-listen = 0.0.0.0:8888
 socks5-listen = 0.0.0.0:8889
-internet-test-url = http://www.qualcomm.cn/generate_204
-proxy-test-url = http://www.qualcomm.cn/generate_204
-test-timeout = 3
+external-controller-access = lhie1@0.0.0.0:6170
+internet-test-url = http://www.gstatic.com/generate_204
+proxy-test-url = http://cp.cloudflare.com/generate_204
+test-timeout = 5
 ipv6 = false
 show-error-page-for-reject = true
 # DNS
@@ -19,22 +20,26 @@ skip-proxy = 127.0.0.1, 192.168.0.0/16, 10.0.0.0/8, 172.16.0.0/12, 100.64.0.0/10
 exclude-simple-hostnames = true
 use-default-policy-if-wifi-not-primary = false
 # Others
-allow-wifi-access = false
+allow-wifi-access = true
 enhanced-mode-by-rule = false
 # network-framework = true
-network-framework = true
 tls-provider = openssl
+geoip-maxmind-url = https://github.com/Hackl0us/GeoIP2-CN/raw/release/Country.mmdb
+network-framework = true
 always-real-ip = msftconnecttest.com, msftncsi.com, *.msftconnecttest.com, *.msftncsi.com, *.srv.nintendo.net, *.stun.playstation.net, xbox.*.microsoft.com, *.xboxlive.com, *.battlenet.com.cn, *.battlenet.com, *.blzstatic.cn
 hijack-dns = 8.8.8.8:53, 8.8.4.4:53
 tun-excluded-routes = 192.168.0.0/16, 10.0.0.0/8, 172.16.0.0/12
-tun-included-routes = 192.168.1.12/32,10.92.1.12/32
-doh-server = https://doh.pub/dns-query
+tun-included-routes = 192.168.1.12/32, 10.92.1.12/32
+doh-server = https://dh-dns.global-idc.net/dns-query
 
 [Replica]
 hide-apple-request = true
 hide-crashlytics-request = true
 hide-udp = false
 keyword-filter-type = false
+
+[Rule]
+GEOIP, CN, direct
 
 [Host]
 ip6-localhost = ::1
