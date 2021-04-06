@@ -31,6 +31,7 @@ tun-included-routes = 192.168.1.12/32, 10.92.1.12/32
 doh-server = https://dh-dns.global-idc.net/dns-query
 doh-format = wireformat
 network-framework = false
+force-http-engine-hosts = -*.apple.com
 
 [Replica]
 hide-apple-request = true
