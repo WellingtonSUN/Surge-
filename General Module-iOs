@@ -31,7 +31,7 @@ tun-included-routes = 192.168.1.12/32, 10.92.1.12/32
 doh-server = https://doh.pub/dns-query
 doh-format = wireformat
 network-framework = false
-force-http-engine-hosts = -*.apple.com
+force-http-engine-hosts = *.google.com
 http-api-tls=true
 
 [Replica]
