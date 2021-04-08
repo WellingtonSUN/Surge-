@@ -32,6 +32,7 @@ doh-server = https://doh.pub/dns-query
 doh-format = wireformat
 network-framework = false
 force-http-engine-hosts = -*.apple.com
+http-api-tls=true
 
 [Replica]
 hide-apple-request = true
