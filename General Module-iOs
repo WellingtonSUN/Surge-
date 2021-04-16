@@ -28,7 +28,8 @@ always-real-ip = msftconnecttest.com, msftncsi.com, *.msftconnecttest.com, *.msf
 hijack-dns = 8.8.8.8:53, 8.8.4.4:53
 tun-excluded-routes = 192.168.0.0/16, 10.0.0.0/8, 172.16.0.0/12
 tun-included-routes = 192.168.1.12/32, 10.92.1.12/32
-doh-server = https://dh-dns.global-idc.net/dns-query
+doh-server = https://doh.pub/dns-query
+
 doh-format = wireformat
 network-framework = false
 force-http-engine-hosts = *.google.com
