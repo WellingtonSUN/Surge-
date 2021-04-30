@@ -33,6 +33,7 @@ doh-format = wireformat
 network-framework = false
 force-http-engine-hosts = *.google.com
 http-api-tls=true
+allow-dns-svcb=true
 
 [Replica]
 hide-apple-request = true
