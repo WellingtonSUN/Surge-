@@ -1,5 +1,5 @@
 #!name=General Module-iOs
-#!desc=用于总体设置
+#!desc=用于国安认证后的系统
 #!system=ios
 
 [General]
