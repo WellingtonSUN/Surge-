@@ -147,4 +147,4 @@ amplifi.lan = server:system
 enable = true
 tcp-connection = true
 skip-server-cert-verify = true
-hostname = %INSERT% www.google.cn,api.abema.io
+hostname = %INSERT% www.google.cn,api.abema.io, -*snssdk.com, -*amemv.com
