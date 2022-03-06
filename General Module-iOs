@@ -20,7 +20,7 @@ exclude-simple-hostnames = true
 use-default-policy-if-wifi-not-primary = false
 # Others
 allow-wifi-access = true
-enhanced-mode-by-rule = true
+enhanced-mode-by-rule = false
 # network-framework = true
 all-hybrid = true
 tls-provider = openssl
