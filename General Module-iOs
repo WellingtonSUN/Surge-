@@ -1,3 +1,6 @@
+#!name=General Module-iOs
+#!desc=用于总体设置
+
 [General]
 # General
 http-listen = 0.0.0.0:8888
