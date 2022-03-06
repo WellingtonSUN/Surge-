@@ -1,38 +1,32 @@
-#!name=General Module-iOs
-#!desc=用于国安认证后的系统
-#!system=ios
-
 [General]
 # General
 http-listen = 0.0.0.0:8888
 socks5-listen = 0.0.0.0:8889
+external-controller-access = lhie1@0.0.0.0:6170
 internet-test-url = http://www.gstatic.com/generate_204
 proxy-test-url = http://www.gstatic.com/generate_204
 test-timeout = 3
 ipv6 = true
 show-error-page-for-reject = true
 # DNS
-dns-server = 119.29.29.29
+dns-server = 223.5.5.5, 223.6.6.6
 # Advanced
 loglevel = notify
 skip-proxy = 127.0.0.1, 192.168.0.0/16, 10.0.0.0/8, 172.16.0.0/12, 100.64.0.0/10, 17.0.0.0/8, localhost, *.local, *.crashlytics.com
 exclude-simple-hostnames = true
 use-default-policy-if-wifi-not-primary = false
 # Others
-allow-wifi-access = false
-enhanced-mode-by-rule = false
-network-framework = true
-tls-provider = network-framework
+allow-wifi-access = true
+enhanced-mode-by-rule = true
+# network-framework = true
+all-hybrid = true
+tls-provider = openssl
 geoip-maxmind-url = https://github.com/Hackl0us/GeoIP2-CN/raw/release/Country.mmdb
-always-real-ip = msftconnecttest.com, msftncsi.com, *.msftconnecttest.com, *.msftncsi.com, *.srv.nintendo.net, *.stun.playstation.net, xbox.*.microsoft.com, *.xboxlive.com, *.battlenet.com.cn, *.battlenet.com, *.blzstatic.cn
-hijack-dns = 8.8.8.8:53, 8.8.4.4:53
-tun-excluded-routes = 192.168.0.0/16, 10.0.0.0/8, 172.16.0.0/12
-doh-server = https://doh.pub/dns-query 
-doh-format = wireformat
-force-http-engine-hosts = *.google.com
-http-api-tls=true
-allow-dns-svcb=true
 include-all-networks = true
+always-real-ip = *.msftconnecttest.com, *.msftncsi.com, *.srv.nintendo.net, *.stun.playstation.net, xbox.*.microsoft.com, *.xboxlive.com, *.battlenet.com.cn, *.battlenet.com, *.blzstatic.cn
+hijack-dns = 8.8.8.8:53, 8.8.4.4:53
+force-http-engine-hosts = *.google.com
+doh-server = https://dns.alidns.com/dns-query
 
 [Replica]
 hide-apple-request = true
