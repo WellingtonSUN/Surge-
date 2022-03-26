@@ -20,8 +20,6 @@ exclude-simple-hostnames = true
 use-default-policy-if-wifi-not-primary = false
 # Others
 allow-wifi-access = true
-all-hybrid = true
-tls-provider = openssl
 geoip-maxmind-url = https://github.com/Hackl0us/GeoIP2-CN/raw/release/Country.mmdb
 include-all-networks = true
 always-real-ip = *.msftconnecttest.com, *.msftncsi.com, *.srv.nintendo.net, *.stun.playstation.net, xbox.*.microsoft.com, *.xboxlive.com, *.battlenet.com.cn, *.battlenet.com, *.blzstatic.cn
