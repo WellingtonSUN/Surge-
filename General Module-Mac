@@ -28,7 +28,7 @@ http-api-web-dashboard = true
 hijack-dns = 8.8.8.8:53, 8.8.4.4:53
 always-real-ip = *.msftconnecttest.com, *.msftncsi.com, *.srv.nintendo.net, *.stun.playstation.net, xbox.*.microsoft.com, *.xboxlive.com, *.battlenet.com.cn, *.battlenet.com, *.blzstatic.cn
 force-http-engine-hosts = *.google.com
-doh-server = https://sm2.doh.pub/dns-query
+doh-server = https://doh.pub/dns-query
 
 [Replica]
 hide-apple-request = true
