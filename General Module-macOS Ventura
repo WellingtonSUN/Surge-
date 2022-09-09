@@ -28,7 +28,7 @@ hijack-dns = 8.8.8.8:53, 8.8.4.4:53
 always-real-ip = *.msftconnecttest.com, *.msftncsi.com, *.srv.nintendo.net, *.stun.playstation.net, xbox.*.microsoft.com, *.xboxlive.com, *.battlenet.com.cn, *.battlenet.com, *.blzstatic.cn
 force-http-engine-hosts = *.google.com
 use-local-host-item-for-proxy = true
-encrypted-dns-server = quic://dns-unfiltered.adguard.com
+encrypted-dns-server = https://dns.alidns.com/dns-query?
 
 [MITM]
 skip-server-cert-verify = true
