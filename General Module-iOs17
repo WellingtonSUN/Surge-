@@ -20,7 +20,7 @@ use-default-policy-if-wifi-not-primary = false
 allow-wifi-access = true
 # Others
 enhanced-mode-by-rule = false
-encrypted-dns-server = quic://i.passcloud.xyz:784
+encrypted-dns-server = https://doh.apad.pro/dns-query
 # network-framework = true
 dns-server = 223.5.5.5
 ipv6-vif = auto
